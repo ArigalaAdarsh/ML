@@ -1,4 +1,4 @@
-# Us Housing Price Prediction Project
+# US Housing Price Prediction Project
 
 ## Overview
 
