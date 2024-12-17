@@ -140,7 +140,10 @@ This project focuses on time series analysis of Walmart sales data to forecast f
 - statsmodels
 - scikit-learn
 - Tensorflow
-
+- Keras
+- scikit-image
+- Machine Learning
+- Deep Learning
 ---
 
 ## **Installation & Setup**
@@ -148,7 +151,7 @@ To get started with any project in this repository, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git [clone https://github.com/your-username/repository-name.git](https://github.com/ArigalaAdarsh/ML.git)
+   git https://github.com/ArigalaAdarsh/ML.git
    ```
 2. Go to the Respective Project
    ```bash
