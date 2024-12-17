@@ -1,71 +1,61 @@
-Census Income Prediction Project
+# Census Income  Classification Project
 
-This project focuses on predicting income levels based on census data using various machine learning algorithms including logistic regression, decision tree, random forest, K-nearest neighbors (KNN), and Naive Bayes. The goal is to analyze the census income dataset and build models to predict whether an individual's income exceeds $50K per year.
-Objective
+## Overview
 
-The primary objective of this project is to implement and compare different machine learning algorithms for income prediction based on census data. Specifically, we aim to:
+In this project, I performed **Exploratory Data Analysis (EDA)** and applied several **classification algorithms** to predict whether an individual earns more than $50,000 per year based on various demographic and employment features. The classification models used include:
 
-    Explore and preprocess the census income dataset.
-    Implement logistic regression, decision tree, random forest, KNN, and Naive Bayes algorithms for income prediction.
-    Perform feature engineering to extract relevant predictors and enhance model performance.
-    Apply hyperparameter tuning and selection techniques to optimize each algorithm's performance.
-    Evaluate and compare the performance of different models based on accuracy and other relevant metrics.
+- **Logistic Regression**
+- **Decision Tree**
+- **Random Forest**
+- **K-Nearest Neighbors (KNN)**
 
-Dataset
+Additionally, **Hyperparameter Tuning** was performed using **GridSearchCV** to optimize model performance, ensuring the best parameters for each model were selected for better predictive accuracy.
 
-The dataset used for this project is the Census Income dataset (also known as "Adult" dataset) from the UCI Machine Learning Repository. It contains various attributes including age, education, occupation, marital status, race, gender, hours per week worked, and more.
+## Dataset
 
-    Dataset Link: UCI Machine Learning Repository - Census Income Dataset
+The dataset used in this project contains demographic information and income data. The following columns are included in the dataset:
 
-Project Structure
+- `age`: Age of the individual
+- `workclass`: Type of employment (e.g., Private, Self-emp, Government)
+- `fnlwgt`: Final weight (census weighting)
+- `education`: Education level (e.g., Bachelors, Masters, PhD)
+- `education-num`: Number of years of education
+- `marital-status`: Marital status (e.g., Married, Single, Divorced)
+- `occupation`: Type of occupation (e.g., Tech-support, Craft-repair)
+- `relationship`: Relationship status (e.g., Husband, Wife, Own-child)
+- `race`: Race (e.g., White, Black, Asian-Pac-Islander)
+- `sex`: Gender (Male or Female)
+- `capital-gain`: Capital gains income
+- `capital-loss`: Capital losses
+- `hours-per-week`: Weekly work hours
+- `native-country`: Country of origin (e.g., United-States, Mexico, India)
+- `Annual-Income`: Income label (<=50K or >50K) (Target variable)
 
-The project is organized into the following directories and files:
+This dataset is included in this repository as a `.csv` file and can be accessed for analysis.
 
-    data/: Contains the census income dataset (adult.csv) and any additional data used for analysis.
+## Technologies Used
 
-    notebooks/: Jupyter notebooks for data preprocessing, exploratory data analysis (EDA), feature engineering, model implementation, hyperparameter tuning, and model evaluation.
+- **Python**: Programming language used for data analysis and machine learning
+- **Pandas**: For data manipulation and preprocessing
+- **Scikit-learn**: For machine learning models, hyperparameter tuning, and evaluation
+- **Matplotlib** and **Seaborn**: For visualizations
+- **NumPy**: For numerical operations
 
-    scripts/: Python scripts for feature engineering, hyperparameter tuning, and model training.
+### Used Algorithms
 
-    models/: Saved trained models after hyperparameter tuning.
+1. **Logistic Regression**: A linear model used for binary classification problems.
+2. **Decision Tree Classifier**: A tree-based model that splits data into branches to classify instances.
+3. **Random Forest Classifier**: An ensemble model using multiple decision trees for better accuracy.
+4. **K-Nearest Neighbors (KNN)**: A non-parametric method for classification based on the proximity of data points.
+  
+### Hyperparameter Tuning
+I used **GridSearchCV** for hyperparameter optimization to improve model performance. This method automatically performs an exhaustive search over specified parameter values for a model and finds the best combination based on cross-validation performance.
 
-    README.md: Project overview and instructions (this file).
+## Installation
 
-Setup and Usage
+To get started, clone the repository and install the necessary dependencies:
 
-    Clone the Repository:
-
-    bash
-
-git clone https://github.com/your-username/census-income-prediction.git
-cd census-income-prediction
-
-Setup Python Environment:
-
-    It's recommended to use a virtual environment for this project.
-
-bash
-
-    # Create a virtual environment (optional but recommended)
-    python3 -m venv venv
-    source venv/bin/activate  # Activate the virtual environment (Linux/Mac)
-    # or
-    .\venv\Scripts\activate  # Activate the virtual environment (Windows)
-
-    # Install required packages
-    pip install -r requirements.txt
-
-    Explore Notebooks:
-        Navigate to the notebooks/ directory to run and explore Jupyter notebooks for data preprocessing, model implementation, and evaluation.
-
-    Run Scripts:
-        Execute Python scripts in the scripts/ directory for feature engineering, hyperparameter tuning, and model training.
-
-    Model Evaluation:
-        Evaluate model performance using metrics such as accuracy, precision, recall, and F1-score.
-        Compare and analyze the results of different algorithms.
-
-References
-
-    UCI Machine Learning Repository - Census Income Dataset
-    Scikit-learn Documentation - Machine Learning Algorithms
+```bash
+git clone https://github.com/ArigalaAdarsh/ML.git
+cd Census-Project-Classification
+ 
